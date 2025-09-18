@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz game</title>
+  <link rel="stylesheet" href="secondpage.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quick Quiz</h1>
+    <div id="quiz-box">
+      <p id="question">Question text</p>
+      <div id="options"></div>
+      <p class="timer">Time Left: <span id="time">10</span>s</p>
+      <button id="nextBtn" onclick="nextQuestion()">Next</button>
+    </div>
+    <div id="result-box" class="hidden">
+      <h2>Quiz Finished!</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
